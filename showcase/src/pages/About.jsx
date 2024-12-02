@@ -11,16 +11,19 @@ const About = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="px-4 py-16 bg-[#F9FDFE]">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+      <h2 className="mb-12 text-4xl font-bold text-center text-blue-600">
+          About Us
+        </h2>
+        <div className="flex flex-col items-center gap-12 lg:flex-row">
           {/* Image Section */}
           <div className="lg:w-1/2">
             <div className="relative">
               <img
                 src={about1}
                 alt="Doctor with patient"
-                className="rounded-lg shadow-lg  object-cover "
+                className="object-cover rounded-lg shadow-lg "
               />
             </div>
           </div>
@@ -34,7 +37,7 @@ const About = () => {
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-800">
+              <h2 className="text-3xl font-bold md:text-4xl text-slate-800">
                 Healthy Maternity For Parents To Be
               </h2>
 
@@ -44,14 +47,14 @@ const About = () => {
                 randomised words which dont look...
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                 {services.map((service) => (
                   <div
                     key={service.id}
                     className="flex items-center space-x-2"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-5 h-5 rounded-full bg-rose-100 flex items-center justify-center">
+                      <div className="flex items-center justify-center w-5 h-5 rounded-full bg-rose-100">
                         <svg
                           className="w-3 h-3 text-[#1E40AF]"
                           fill="none"

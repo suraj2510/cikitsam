@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const Team = () => {
   const teamMembers = [
@@ -43,31 +43,31 @@ const Team = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="px-4 py-16 bg-[#F9FDFE]">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-blue-600 mb-12">
+      <h2 className="mb-12 text-4xl font-bold text-center text-blue-600">
           Core Team
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="flex flex-col items-center p-6 transition-shadow duration-300 bg-white rounded-lg shadow-lg hover:shadow-xl"
             >
-              <div className="w-48 h-48 mb-4 rounded-full overflow-hidden">
+              <div className="w-48 h-48 mb-4 overflow-hidden rounded-full">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  className="object-cover w-full h-full"
                 />
               </div>
               
-              <h3 className="text-xl font-bold text-blue-600 mb-2">
+              <h3 className="mb-2 text-xl font-bold text-blue-600">
                 {member.name}
               </h3>
               
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4 text-gray-600">
                 {member.role}
               </p>
               
@@ -75,7 +75,7 @@ const Team = () => {
                 {member.social.linkedin && (
                   <a 
                     href={member.social.linkedin}
-                    className="text-blue-500 hover:text-blue-700 transition-colors"
+                    className="text-blue-500 transition-colors hover:text-blue-700"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -86,7 +86,7 @@ const Team = () => {
                 {member.social.github && (
                   <a 
                     href={member.social.github}
-                    className="text-gray-700 hover:text-gray-900 transition-colors"
+                    className="text-gray-700 transition-colors hover:text-gray-900"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -96,7 +96,7 @@ const Team = () => {
                 {member.social.twitter && (
                   <a 
                     href={member.social.twitter}
-                    className="text-blue-400 hover:text-blue-600 h transition-colors"
+                    className="text-blue-400 transition-colors hover:text-blue-600 h"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

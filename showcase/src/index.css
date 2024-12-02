@@ -65,3 +65,19 @@
   }
 }
 
+
+.heart {
+	font-size: 60px;
+	color: #e00;
+	animation: beat .30s infinite alternate;
+	transform-origin: center;
+  text-align: center;
+}
+
+
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.3); }
+}
+
