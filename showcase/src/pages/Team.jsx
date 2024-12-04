@@ -1,20 +1,25 @@
 import { Github, Linkedin, Twitter } from 'lucide-react';
+import adarsh from "../assets/adarsh.jpg"
+import suraj from "../assets/suraj.jpg"
+import rishabh from "../assets/rishabh.jfif"
+import kunjal from "../assets/kunjal.jpg"
 
 const Team = () => {
   const teamMembers = [
     {
       name: 'Adarsh Kumar',
       role:'Team Lead:Hardware Engineer',
-      image: '/path-to-tanishq-image.jpg',
+      image: adarsh,
       social: {
-        linkedin: '',
-        github: '',
+        linkedin: 'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
+        twitter: 'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
+        github: 'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
       }
     },
     {
       name: 'Suraj Maurya',
       role: 'Web Developer',
-      image: '/path-to-kanishka-image.jpg',
+      image: suraj,
       social: {
         linkedin: 'https://www.linkedin.com/in/surajmaurya252101101/',
         twitter: 'https://x.com/surajxcode',
@@ -24,20 +29,21 @@ const Team = () => {
     {
       name: 'Rishabh Singh',
       role: 'ML Engineer',
-      image: '/path-to-gajender-image.jpg',
+      image: rishabh,
       social: {
-        linkedin: '',
-        github: '',
-        twitter: ''
+        linkedin: 'https://www.linkedin.com/in/rishabh-singh-84201b207/',
+        twitter: 'https://x.com/Rathore_775',
+        github: 'https://www.linkedin.com/in/rishabh-singh-84201b207/',
       }
     },
     {
       name: 'Kunjal Tuli',
-      role: 'UI/UX Designer ',
-      image: '/path-to-jane-image.jpg',
+      role: 'Research & Development ',
+      image: kunjal,
       social: {
-        linkedin: '',
-        github: '',
+        linkedin: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
+        twitter: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
+        github: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
       }
     }
   ];
@@ -79,7 +85,7 @@ const Team = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Linkedin className="w-5 h-5" />
+                    <Linkedin className="w-5 h-5 transition-transform duration-300 hover:scale-150" />
                   </a>
                 )}
                 
@@ -90,7 +96,7 @@ const Team = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github className="w-5 h-5" />
+                    <Github className="w-5 h-5 transition-transform duration-300 hover:scale-150" />
                   </a>
                 )}
                 {member.social.twitter && (
@@ -100,7 +106,8 @@ const Team = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Twitter className="w-5 h-5 hover:scale-150 " />
+                   <Twitter className="w-5 h-5 transition-transform duration-150 hover:scale-150" />
+
                   </a>
                 )}
               </div>

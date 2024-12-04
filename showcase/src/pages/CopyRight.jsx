@@ -11,7 +11,7 @@ const CopyRight = () => {
 
         {/* Developer Credit Section */}
         <p className="mb-2 text-md">
-          Developed by <Badge variant="outline"><span className="text-blue-500">Suraj Maurya</span></Badge>
+          Developed by <Badge variant="outline"><span className="text-blue-500">Team Cikitsam</span></Badge>
         </p>
       </div>
     </footer>

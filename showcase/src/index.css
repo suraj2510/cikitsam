@@ -67,7 +67,7 @@
 
 
 .heart {
-	font-size: 60px;
+	font-size: 38px;
 	color: #e00;
 	animation: beat .30s infinite alternate;
 	transform-origin: center;
