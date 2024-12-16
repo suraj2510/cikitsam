@@ -12,8 +12,8 @@ const Team = () => {
       image: adarsh,
       social: {
         linkedin: 'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
-        twitter: 'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
         github: 'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
+        twitter:'https://www.linkedin.com/in/adarsh-kumar-77b2671b2/',
       }
     },
     {
@@ -42,8 +42,9 @@ const Team = () => {
       image: kunjal,
       social: {
         linkedin: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
-        twitter: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
         github: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
+        twitter: 'https://www.linkedin.com/in/kunjal-tuli-56042b265/',
+        
       }
     }
   ];

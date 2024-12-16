@@ -90,7 +90,7 @@ const Contact = () => {
           </div>
           
           {/* Right side - Contact Info */}
-          <div className="mt-8 space-y-10 lg:pl-12 lg:mt-20">
+          <div className="mt-8 space-y-10  lg:pl-12 lg:mt-20">
             <div>
               <h2 className="mb-2 text-lg font-medium">Email</h2>
               <a href="mailto:cikitsam1@gmail.com" className="text-gray-800 hover:text-black">

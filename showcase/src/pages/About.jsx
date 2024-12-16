@@ -1,4 +1,5 @@
 import about1 from "../assets/about1.png";
+// import BeatAnimation from "../pages/BeatAnimation.jsx"
 import {
   Sheet,
   SheetContent,
@@ -10,16 +11,16 @@ import {
 
 const About = () => {
   const services = [
-    { id: 1, name: "Hospital Center Health" },
-    { id: 2, name: "Infection Prevention Care" },
-    { id: 3, name: "Hospital Center Health" },
-    { id: 4, name: "Operation Theatre" },
-    { id: 5, name: "Blood Test Health" },
-    { id: 6, name: "Outdoor Checkup" },
+    { id: 1, name: "Real time stress monitorring" },
+    { id: 2, name: "Mindfullness tracking & Guidance" },
+    { id: 3, name: "Application Support" },
+    { id: 4, name: "Daily wellness progress supports" },
+    { id: 5, name: "Tailored relief techniques" },
+    { id: 6, name: "Diagnose and care" },
   ];
 
   return (
-    <section className="px-4 py-16 bg-[#F9FDFE]">
+    <section className="px-4 py-10 bg-[#F9FDFE]">
       <div className="container mx-auto">
         <h2 className="mb-12 text-4xl font-bold text-center text-blue-600">
           About Us
@@ -46,13 +47,14 @@ const About = () => {
               </div>
 
               <h2 className="text-3xl font-bold md:text-4xl text-slate-800">
-                Healthy Maternity For Parents To Be
+              Elevate Your Mental Wellness with <span className="inline-block mt-2 text-blue-600">Cikitsam </span>
               </h2>
+              {/* <BeatAnimation/> */}
 
               <p className="text-slate-600">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour or randomised words which dont look...
+                Transforming mental health and
+                Fitness with edge cutting advancement , unlock mindfulness and
+                strength your emotional Core .
               </p>
 
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -97,16 +99,23 @@ const About = () => {
                 </svg>
               </button> */}
               <Sheet>
-                <SheetTrigger className="p-2 mt-2 font-medium text-white bg-blue-700 rounded-lg outline-none">Click more</SheetTrigger>
+                <SheetTrigger className="p-2 mt-2 font-medium text-white bg-blue-700 rounded-lg outline-none">
+                  About more
+                </SheetTrigger>
                 <SheetContent className="w-[400px] h-[200px] sm:w-[440px] ">
                   <SheetHeader className="">
-                    <SheetTitle>Start Up and Funded by <span className="text-2xl font-bold text-blue-800">KUTIC</span></SheetTitle>
-                    <SheetDescription className="text-xs font-semibold " >
-                    Kurukshetra University Technology Incubation Centre
+                    <SheetTitle>
+                      Start Up and Funded by{" "}
+                      <span className="text-2xl font-bold text-blue-800">
+                        KUTIC
+                      </span>
+                    </SheetTitle>
+                    <SheetDescription className="text-xs font-semibold ">
+                      Kurukshetra University Technology Incubation Centre
                     </SheetDescription>
                     <p className="font-medium">Company Legal Details</p>
-                    <SheetDescription >
-                    Udhyam – UDYAM-HR-08-0028821
+                    <SheetDescription>
+                      Udhyam – UDYAM-HR-11-0041823
                     </SheetDescription>
                   </SheetHeader>
                 </SheetContent>
