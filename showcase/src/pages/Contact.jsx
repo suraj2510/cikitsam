@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import SocialMedia from '@/components/ui/SocialMedia';
-import SocialMediax from '@/components/ui/SocialMediax';
+import { useState } from "react";
+import SocialMedia from "@/components/ui/SocialMedia";
+import SocialMediax from "@/components/ui/SocialMediax";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
+    setFormData((prevState) => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -32,7 +32,7 @@ const Contact = () => {
               LETS CONNECT
               <span className="inline-block ml-2">→</span>
             </h1>
-            
+
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
                 <input
@@ -45,7 +45,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <input
                   type="email"
@@ -57,7 +57,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <div>
                 <textarea
                   name="message"
@@ -69,7 +69,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              
+
               <button className="bg-[#1E40AF] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#2f54c2] transition-colors duration-300 inline-flex items-center space-x-2">
                 SEND IT
                 <svg
@@ -88,24 +88,33 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          
+
           {/* Right side - Contact Info */}
-          <div className="mt-8 space-y-10  lg:pl-12 lg:mt-20">
+          <div className="mt-8 space-y-10 lg:pl-12 lg:mt-20">
             <div>
               <h2 className="mb-2 text-lg font-medium">Email</h2>
-              <a href="mailto:cikitsam1@gmail.com" className="text-gray-800 hover:text-black">
-              cikitsam1@gmail.com
+              <a
+                href="mailto:cikitsam1@gmail.com"
+                className="text-gray-800 hover:text-black"
+              >
+                cikitsam1@gmail.com
               </a>
             </div>
-            
+
             <div>
               <h2 className="mb-2 text-lg font-medium">Socials</h2>
               <div className="flex space-x-5">
-                <a href="https://www.linkedin.com/in/cikits%C4%81m-integrative-chrono-bio-medical-device-04ba80338/" className="transition-colors hover:text-gray-400">
-                <SocialMedia/>
+                <a
+                  href="https://www.linkedin.com/in/cikits%C4%81m-integrative-chrono-bio-medical-device-04ba80338/"
+                  className="transition-colors hover:text-gray-400"
+                >
+                  <SocialMedia />
                 </a>
-                <a href="https://x.com/cikitsam" className="transition-colors hover:text-gray-400">
-                <SocialMediax/>
+                <a
+                  href="https://x.com/cikitsam"
+                  className="transition-colors hover:text-gray-400"
+                >
+                  <SocialMediax />
                 </a>
               </div>
             </div>

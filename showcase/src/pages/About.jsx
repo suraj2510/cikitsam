@@ -1,5 +1,5 @@
-import about1 from "../assets/about1.png";
-// import BeatAnimation from "../pages/BeatAnimation.jsx"
+// import about1 from "../assets/about1.png";
+import video1 from "../assets/video.mp4";
 import {
   Sheet,
   SheetContent,
@@ -29,10 +29,17 @@ const About = () => {
           {/* Image Section */}
           <div className="lg:w-1/2">
             <div className="relative">
-              <img
-                src={about1}
+              <video
+                autoPlay
+                loop
+                muted
+                src={video1}
                 alt="Doctor with patient"
-                className="object-cover rounded-lg shadow-lg "
+                className="object-cover rounded-lg"
+                style={{
+                  boxShadow:
+                    "rgba(0, 0, 0, 0.10) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 2px",
+                }}
               />
             </div>
           </div>
@@ -47,14 +54,17 @@ const About = () => {
               </div>
 
               <h2 className="text-3xl font-bold md:text-4xl text-slate-800">
-              Elevate Your Mental Wellness with <span className="inline-block mt-2 text-blue-600">Cikitsam </span>
+                Elevate Your Mental Wellness with{" "}
+                <span className="inline-block mt-2 text-blue-600">
+                  Cikitsam{" "}
+                </span>
               </h2>
               {/* <BeatAnimation/> */}
 
               <p className="text-slate-600">
-                Transforming mental health and
-                Fitness with edge cutting advancement , unlock mindfulness and
-                strength your emotional Core .
+                Transforming mental health and Fitness with edge cutting
+                advancement , unlock mindfulness and strength your emotional
+                Core .
               </p>
 
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
